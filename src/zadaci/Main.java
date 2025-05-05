@@ -35,7 +35,7 @@ public class Main {
             e.printStackTrace();
         }
 
-         deleteById(48);
+        deleteById(48);
 
     }
 
