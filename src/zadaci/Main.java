@@ -21,6 +21,13 @@ public class Main {
 
     public static void main(String[] args) {
 
+        unos();
+        deleteById(48);
+
+    }
+
+
+    public static void unos() {
         List<String> države = new ArrayList<>(
                 Arrays.asList("Kina", "Francuska", "Japan", "Indija", "Novi Zeland", "Finska", "Norveška", "Island", "Peru", "Nepal"));
 
@@ -34,11 +41,7 @@ public class Main {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-        deleteById(48);
-
     }
-
 
     public static void deleteById(int id) {
         try (Connection connection = createDataSource().getConnection()) {
